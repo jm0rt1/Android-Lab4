@@ -39,7 +39,7 @@ public class SimpleRecylcerAdapter extends RecyclerView.Adapter<SoupViewHolder> 
 
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(c.getApplicationContext(),"clicked", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(c.getApplicationContext(),"clicked "+data.get(position).name, Toast.LENGTH_SHORT);
                 toast.show();
             }
 
