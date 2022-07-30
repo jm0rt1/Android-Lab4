@@ -27,8 +27,11 @@ public class MainActivity extends AppCompatActivity {
             TextView longPressMe = findViewById(R.id.long_press_me);
             registerForContextMenu(longPressMe);
 
+
             Button recyclerButton = findViewById(R.id.recycler_view_button);
             recyclerButton.setOnClickListener(this::recyclerView);
+            Button listViewButton = findViewById(R.id.list_view_button);
+            listViewButton.setOnClickListener(this::listView);
         }
         catch(Exception ex){
             Log.e(TAG, ex.toString());
@@ -90,6 +93,12 @@ public class MainActivity extends AppCompatActivity {
     public void recyclerView(View view)
     {
         Intent intent = new Intent(this, RecyclerViewActivity.class);
+        startActivity(intent);
+
+    }
+    public void listView(View view)
+    {
+        Intent intent = new Intent(this, ListViewActivity.class);
         startActivity(intent);
     }
 }
