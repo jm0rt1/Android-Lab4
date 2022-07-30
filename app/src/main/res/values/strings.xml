@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lab4</string>
+
+    <string-array name="soup_names">
+        <item>Roasted Cauliflower Soup</item>
+        <item>Taco Soup</item>
+    </string-array>
+
+    <integer-array name="soup_images">
+        <item>@drawable/roasted_cauliflower_soup</item>
+        <item>@drawable/taco_soup</item>
+    </integer-array>
+</resources>
