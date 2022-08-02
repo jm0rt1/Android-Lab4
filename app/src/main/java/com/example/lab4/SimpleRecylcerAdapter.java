@@ -1,5 +1,6 @@
 package com.example.lab4;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,7 +33,7 @@ public class SimpleRecylcerAdapter extends RecyclerView.Adapter<SoupViewHolder> 
     }
 
     @Override
-    public void onBindViewHolder(final SoupViewHolder holder, final int position) {
+    public void onBindViewHolder(final SoupViewHolder holder, @SuppressLint("RecyclerView") final int position) {
         holder.name.setText(data.get(position).name);
         holder.pic.setImageResource(data.get(position).image);
         holder.view.setOnClickListener(new View.OnClickListener(){

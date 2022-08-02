@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Lab4</string>
+    <string name="long_press_me">Long Press Me</string>
+    <string name="show_recycler_view">Show Recycler View</string>
+    <string name="show_list_view">Show List View</string>
 
     <string-array name="soup_names">
         <item>Roasted Cauliflower Soup</item>
